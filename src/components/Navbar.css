@@ -1,0 +1,30 @@
+.navbar.navbar-default {
+  border-bottom: 1px solid black;
+}
+
+.main-header {
+  width: auto;
+}
+
+.main-header h1 {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.links {
+  float: right;
+  list-style: none;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.links li {
+  display: inline-block;
+  margin-right: 40px;
+  font-size: 150%;
+}
+
+.links li a:link,
+.links li a:visited {
+  text-decoration: none;
+}
