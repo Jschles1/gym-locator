@@ -27,4 +27,12 @@
 .links li a:link,
 .links li a:visited {
   text-decoration: none;
+  color: black;
+  transition: border-bottom 0.2s, color 0.2s
+}
+
+.links li a:hover,
+.links li a:active {
+  color: blue;
+  border-bottom: 2px solid blue;
 }
