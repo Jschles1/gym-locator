@@ -1,5 +1,6 @@
 .navbar.navbar-default {
   border-bottom: 1px solid black;
+  background-color: white;
 }
 
 .main-header {
@@ -33,6 +34,6 @@
 
 .links li a:hover,
 .links li a:active {
-  color: blue;
-  border-bottom: 2px solid blue;
+  color: #222fff;
+  border-bottom: 2px solid #222fff;
 }
