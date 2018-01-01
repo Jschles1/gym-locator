@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { FormControl, ControlLabel, Button, FormGroup } from 'react-bootstrap';
 
 class Search extends Component {
   constructor(props) {
@@ -9,7 +10,21 @@ class Search extends Component {
 
   render() {
     return (
-      <p>Search Form</p>
+      <form>
+        <FormGroup>
+          <p>Gym Type</p>
+        </FormGroup>
+
+        <FormGroup>
+          <FormControl 
+            type="number"
+          />
+        </FormGroup>
+
+        <Button type="submit">
+          Search
+        </Button>
+      </form>
     );
   }
 }
