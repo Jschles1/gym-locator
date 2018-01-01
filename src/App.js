@@ -3,6 +3,7 @@ import './App.css';
 
 import Navbar from './components/Navbar';
 import Search from './components/Search';
+import Results from './components/Results';
 
 class App extends Component {
   render() {
@@ -11,6 +12,7 @@ class App extends Component {
         <Navbar />
         <div className="container-main">
           <Search />
+          <Results />
         </div>
       </div>
     );
