@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 
 const Results = (props) => 
-  <p>Search Results</p>
+  <div className="results">
+    Search Results
+  </div>
 
 export default Results;  

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Form, FormControl, ControlLabel, Button, FormGroup } from 'react-bootstrap';
+import './Search.css';
 
 class Search extends Component {
   constructor(props) {
@@ -20,7 +21,7 @@ class Search extends Component {
         <FormGroup controlId="formInlineZipCode">
           <ControlLabel>Zip Code</ControlLabel>
           {' '}
-          <FormControl type="zipcode" pattern="[0-9]{5}" />
+          <FormControl type="number" pattern="[0-9]{5}" />
         </FormGroup>
           {' '}
         <Button type="submit">

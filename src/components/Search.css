@@ -1,0 +1,9 @@
+form.form-inline {
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid black;
+}
+
+.form-group {
+  margin-right: 10px; 
+}
