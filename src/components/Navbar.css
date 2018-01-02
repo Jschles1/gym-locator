@@ -1,6 +1,22 @@
 .navbar.navbar-default {
+  border-color: white;
   border-bottom: 1px solid black;
   background-color: white;
+  margin-bottom: 5px;
+  
+}
+
+.navbar-brand {
+  height: 30px;
+}
+
+h1.main-header.navbar-brand,
+h1.main-header.navbar-brand:hover {
+  line-height: none;
+  font-size: 35px;
+  color: black;
+  width: auto;
+  padding: 0;
 }
 
 .main-header {
@@ -10,6 +26,7 @@
 .main-header h1 {
   display: inline-block;
   margin-left: 40px;
+  font-size: 120%;
 }
 
 .links {
@@ -22,18 +39,21 @@
 .links li {
   display: inline-block;
   margin-right: 40px;
-  font-size: 150%;
 }
 
 .links li a:link,
 .links li a:visited {
   text-decoration: none;
   color: black;
+  padding: 0;
+  margin-top: 1px;
+  margin-bottom: 15px;
+  font-size: 20px;
   transition: border-bottom 0.2s, color 0.2s
 }
 
-.links li a:hover,
-.links li a:active {
+.links.nav.navbar-nav.navbar-right li a:hover,
+.links.nav.navbar-nav.navbar-right li a:active {
   color: #222fff;
   border-bottom: 2px solid #222fff;
 }
