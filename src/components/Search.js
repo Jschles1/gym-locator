@@ -11,30 +11,41 @@ class Search extends Component {
 
     this.state = {
       gymType: '',
-      zipCode: 0,
+      zipCode: '',
       radius: 25
     };
   }
 
+  handleOnChange = (event) => {
+    const { name, value } = event.target; 
+    this.setState({
+      [name]: value
+    })
+  }
+
+  handleOnSubmit = (event) => {
+    this.props.actions.searchGyms(this.state);
+  }
+
   render() {
     return (
-      <Form inline>
+      <Form inline onSubmit={this.handleOnSubmit}>
         <FormGroup controlId="formInlineType">
           <ControlLabel>Gym Type</ControlLabel>
           {' '}
-          <FormControl type="text" />
+          <FormControl value={this.state.gymType} onChange={this.handleOnChange} name="gymType" type="text" />
         </FormGroup>
           {' '}
         <FormGroup controlId="formInlineZipCode">
           <ControlLabel>Zip Code</ControlLabel>
           {' '}
-          <FormControl type="number" pattern="[0-9]{5}" />
+          <FormControl value={this.state.zipCode} onChange={this.handleOnChange} name="zipCode" type="number" pattern="[0-9]{5}" />
         </FormGroup>
           {' '}
         <FormGroup controlId="formInlineRadius">
           <ControlLabel>Radius</ControlLabel>
           {' '}
-          <FormControl type="number" pattern="[0-9]{5}" />
+          <FormControl value={this.state.radius} onChange={this.handleOnChange} name="radius" type="number" pattern="[0-9]{5}" />
         </FormGroup>
           {' '}
         <Button type="submit">
